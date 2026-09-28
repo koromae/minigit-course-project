@@ -59,3 +59,59 @@ UR-GIT-06 → source UN ID(s): ___UN-GIT-04__, ___UN-GIT-05__
 UR-GIT-07 → source UN ID(s): __UN-GIT-06__
 UR-GIT-08 → source UN ID(s): ___UN-GIT-07__
 UR-GIT-09 → source UN ID(s): __UN-GIT-07__
+
+
+
+## Functional System Requirements
+
+Under that heading, write FIVE numbered SRs in your HW3 file. Use the following exact topics in order: SR-01 first init; SR-02 repeated init; SR-03 add one existing file; SR-04 add a missing file; SR-05 status for one staged file. For EACH SR, write its source UR ID, starting condition, action, and observable result. Do not merely repeat the UR. Use this frame: “SR-__ (source UR-GIT-__): Given [state], when [exact MiniGit command], MiniGit shall [result that a classmate could check].” The worked SR-03 below may be adapted in your own words.
+Worked SR-03: Given an initialized project with notes.txt containing ONE and plan.txt present, when add notes.txt is used, MiniGit shall stage a copy of notes.txt containing ONE without staging plan.txt.
+
+- My SR-01 result I can check: __Given an initialized project with notes.txt containing ONE and plan.txt present, when init is used for the first time, the Minigit shall create an empty local git repository ___
+
+- My SR-02 result I can check: ___Given an initialized project with notes.txt containing ONE and plan.txt present, when init is used for the second time, the Minigit shall deliver an error message and impeach the action to alter or change any file in the project__
+
+- My SR-04 error and preserved state: _Given an initialized project with notes.txt containing ONE and plan.txt present, when add missing.txt file is used, the MiniGit shall display an error message and impeach the action to alter or change notes.txt, nor plan.txt in the project folder.___
+
+- My SR-05 result I can check: _Given an initialized project with notes.txt containing ONE and plan.txt present in the project folder, when checking for the status of one staged file, the Minigit shall clearly display the modified file ready for the next checkpoint, which indirectly confirms that other unintended files have not been mistakenly selected for the said checkpoint.___
+
+
+- SR-01 → source UR ID(s): __UR-GIT-01__
+- SR-02 → source UR ID(s): __UR-GIT-08__, __UR-GIT-09__
+- SR-03 → source UR ID(s): ___UR-GIT-05__
+- SR-04 → source UR ID(s): __UR-GIT-08__, __UR-GIT-09__
+- SR-05 → source UR ID(s): __UR-GIT-02__ , ___UR-GIT-05__
+One concrete “Check:” from my HW3 file: ______________________
+____________________________________________________________
+
+
+
+
+
+## 12 System Requirements
+
+
+- My SR-01 result I can check: __Given an initialized project with notes.txt containing ONE and plan.txt present, when init is used for the first time, the Minigit shall create an empty local git repository ___
+
+- My SR-02 result I can check: ___Given an initialized project with notes.txt containing ONE and plan.txt present, when init is used for the second time, the Minigit shall deliver an error message and impeach the action to alter or change any file in the project__
+
+- My SR-03:
+
+- My SR-04 error and preserved state: _Given an initialized project with notes.txt containing ONE and plan.txt present, when add missing.txt file is used, the MiniGit shall display an error message and impeach the action to alter or change notes.txt, nor plan.txt in the project folder.___
+
+- My SR-05 result I can check: _Given an initialized project with notes.txt containing ONE and plan.txt present in the project folder, when checking for the status of one staged file, the Minigit shall clearly display the modified file ready for the next checkpoint, which indirectly confirms that other unintended files have not been mistakenly selected for the said checkpoint.___
+
+- My SR-06: _Given an initialized project with notes.txt containing ONE and plan.txt present in the project folder, the Minigit should clearly show the content that is selected for the next checkpoint from the content not selected and still saved in the working tree. When the appropriate command is run, the minigit must distinctly diplay the files in the staged area, and the file still in the working area without confusion and alteration.
+
+- My SR-07: _Given an initialized project with notes.txt containing ONE and plan.txt present in the project folder and having a recorded checkpoint, the minigit should 
+
+- My SR-08: Given an initialized project with notes.txt containing ONE and plan.txt present in the project folder, when the command “ git commit -m “…” “ is ran, the minigit should create a descriptive checkpoint without altering any other files that was not selected for the checkpoint, in other words any file that was not explicitly staged. 
+
+- My SR-09: Given an initialized project where notes.txt is staged with "ONE" and then modified in the working tree to "TWO", when diff is used, MiniGit shall display the line-by-line differences between the working file and the staged copy in the terminal output.
+
+- My SR-10: Given an initialized project with two recorded checkpoints having unique identifiers and descriptions, when log is used, MiniGit shall display the checkpoints from newest to oldest, showing each checkpoint's identifier and explanation.
+
+
+- My SR-11: - My SR-11: Given an initialized project with notes.txt staged, when commit -m "" is used with an empty explanation string, MiniGit shall display a descriptive error message and leave the staged content and latest checkpoint unchanged.
+
+- My SR-12:  Given an initialized project, when an invalid command or a file path outside the allowed project files is used, MiniGit shall display a clear error message without altering any existing project files or recorded checkpoints.
